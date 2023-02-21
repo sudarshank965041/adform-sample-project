@@ -5,7 +5,11 @@ import AddCampaigns from "./service/addCampaign";
 window.AddCampaigns = AddCampaigns;
 
 function App() {
-  return <CampaignList />;
+  return (
+    <div className="app-container">
+      <CampaignList />
+    </div>
+  );
 }
 
 export default App;

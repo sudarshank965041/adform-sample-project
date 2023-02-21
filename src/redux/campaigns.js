@@ -124,7 +124,7 @@ export default function campaignReducer(
       return {
         ...state,
         loading: false,
-        data: [...state.data, ...action.payload],
+        data: [...action.payload, ...state.data],
         error: null,
       };
     default:
